@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1418401146 source:d:\data\corrections_c++\tp7\enseignant.cpp
+	"Enseignant.h"
+
+1415288572 d:\data\corrections_c++\tp7\enseignant.h
+	<list>
+	"Personne.h"
+
+1448029590 d:\data\corrections_c++\tp7\personne.h
+	<iostream>
+	"Date.h"
+
+1512317309 d:\data\corrections_c++\tp7\date.h
+	<iostream>
+	<time.h>
+
+1448611948 source:d:\data\corrections_c++\tp7\personne.cpp
+	"Personne.h"
+
+1448611982 source:d:\data\corrections_c++\tp7\test_etudiant.cpp
+	"Etudiant.h"
+	<cstdlib>
+	<cstdio>
+
+1512644628 d:\data\corrections_c++\tp7\etudiant.h
+	"Personne.h"
+	<sstream>
+
+1512640722 source:d:\data\corrections_c++\tp7\test_etudiant2.cpp
+	"Etudiant.h"
+	<cstdlib>
+	<cstdio>
+
+1421247278 source:d:\data\corrections_c++\tp7\test_etudiant2bis.cpp
+	"Etudiant.h"
+	<cstdlib>
+	<cstdio>
+
+1512644790 source:d:\data\corrections_c++\tp7\etudiant.cpp
+	"Etudiant.h"
+
+1445518488 source:d:\data\corrections_c++\tp7\date.cpp
+	"Date.h"
+
