@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1445514888 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Date.cpp
+	"Date.h"
+
+1447147188 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Date.h
+	<iostream>
+
+1385395870 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Personne.cpp
+	"Personne.h"
+
+1542355054 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Personne.h
+	<iostream>
+	"Date.h"
+
+1542354211 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Test_Etudiant.cpp
+	"Etudiant.h"
+	<cstdlib>
+	<cstdio>
+
+1542790525 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Etudiant.h
+	<list>
+	<sstream>
+	<map>
+	<string>
+	"Personne.h"
+
+1542358944 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Etudiant.cpp
+	"Etudiant.h"
+
+1541487266 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Enseignant.cpp
+	"Enseignant.h"
+
+1541487266 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp5/Enseignant.h
+	<map>
+	"Personne.h"
+

@@ -1,18 +1,21 @@
 # depslib dependency file v1.0
-1511982484 source:d:\data\corrections_c++\tp2\date.cpp
+1541497256 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/Date.cpp
 	"Date.h"
-	<time.h>
 
-1511966077 d:\data\corrections_c++\tp2\date.h
+1541668657 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/Date.h
 	<iostream>
 
-1511982320 source:d:\data\corrections_c++\tp2\personne.cpp
+1541502575 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/Personne.cpp
 	"Personne.h"
 
-1511966076 d:\data\corrections_c++\tp2\personne.h
+1541502649 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/Personne.h
+	"Date.h"
+	<iostream>
+
+1541497246 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/TestDate.cpp
 	<iostream>
 	"Date.h"
 
-1511966076 source:d:\data\corrections_c++\tp2\testpersonne2.cpp
+1541497227 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp2/TestPersonne.cpp
 	"Personne.h"
 

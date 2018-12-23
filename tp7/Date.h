@@ -2,8 +2,6 @@
 #define DATE_H
 
 #include <iostream>
-#include <time.h>
-
 
 using namespace std;
 

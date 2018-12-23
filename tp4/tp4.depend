@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1445514888 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Date.cpp
+	"Date.h"
+
+1447147188 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Date.h
+	<iostream>
+
+1385395870 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Personne.cpp
+	"Personne.h"
+
+1542354950 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Personne.h
+	<iostream>
+	"Date.h"
+
+1542180577 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/TestAnnuaire.cpp
+	"Annuaire.h"
+
+1542354751 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Annuaire.h
+	<iostream>
+	<limits>
+	<vector>
+	"Personne.h"
+	<string>
+	<sstream>
+	<algorithm>
+
+1542185605 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp4/Annuaire.cpp
+	"Annuaire.h"
+

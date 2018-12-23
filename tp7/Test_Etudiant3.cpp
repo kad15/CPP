@@ -9,6 +9,7 @@ int main(){
 
     cout<<"Etudiant e1"<<endl;
     Etudiant e1("E1","e1",2);     //le troisieme paramètre correspond au nombre de matieres suivies
+
     cout<<"Saisie des matieres de l etudiant e1"<<endl;
     e1.saisirMatieres();	// saisir comme matieres c et c++
 

@@ -1,5 +1,5 @@
 #include "Date.h"
-#include <time.h>
+
 Date::Date()
 {
     cout<<"appel constructeur Date  sans parametre"<<endl;
@@ -14,14 +14,14 @@ Date::Date()
 Date::Date(int j,int m,int a):jour(j),mois(m-1),annee(a)
 {   cout<<"appel constructeur Date avec parametre"<<endl;}
 
-void Date::affiche() const
+void Date::affiche()
 {
     string t[] = {"janvier","fevrier","mars","avril","mai","juin",
                     "juillet","aout","septembre","octobre","novembre","decembre"};
     cout<<jour<<" "<<t[mois]<<" "<<annee<<endl;
 }
 
-int Date::comparer(const Date& d) const
+int Date::comparer(Date d)
 {
 	if (annee!= d.annee)
     {

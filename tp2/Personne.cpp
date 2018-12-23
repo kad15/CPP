@@ -1,33 +1,34 @@
 #include "Personne.h"
 
-using namespace std;
+
 
 int Personne::nb_pers=0;
 
-string Personne::getNom() const
+
+Personne::Personne(const string& n,const  string& p):nom(n), prenom(p),id(nb_pers++)
+{}
+
+Personne::Personne():nom("inconnu"),prenom("inconnu"),id(nb_pers++)
 {
-    return nom;
+    //ctor
 }
 
-string Personne::getPrenom() const
+
+Personne::~Personne()
 {
-    return prenom;
+    //dtor
+    cout<<"Destruction de :"<<endl;
+    affiche();
 }
 
-void Personne::setPrenom(const string& nouveau_prenom)
-{
-    prenom = nouveau_prenom;
-}
-void Personne::setNom(const string& nouveau_nom)
-{
-    nom = nouveau_nom;
-}
-void Personne::affiche() const
-{
-    cout<<id<<" "<<nom<< " "<<prenom<<" saisi le ";
-    date_saisie.affiche();
+
+void Personne::affiche() const{
+    //cout << "nom : "<<nom << " prenom : "<< prenom
+    cout<<id<<" "<<nom<< " "<<prenom<<" saisi le "<<endl;
+    //date_saisie.affiche();
     cout<<endl;
 }
+
 void Personne::saisir()
 {
     string temp;
@@ -40,19 +41,3 @@ void Personne::saisir()
     getline(cin,temp);
     setPrenom(temp);
 }
-
-Personne::Personne(const string& nom,const  string& prenom):id(nb_pers++)
-{
-    setNom(nom);
-    setPrenom(prenom);
-}
-
-Personne::Personne():nom("inconnu"),prenom("inconnu"),id(nb_pers++)
-{}
-
-Personne::~Personne()
-{
-    cout<<"Destruction de :"<<endl;
-    affiche();
-}
-

@@ -7,18 +7,20 @@ using namespace std;
 
 class Date
 {
-    int jour,mois,annee;
-
     public:
         Date();
 
         Date(int,int,int);
 
-        int comparer(const Date&) const ;
+        int comparer(Date);
 
-        void affiche() const ;
+        void affiche();
 
         virtual ~Date();
+
+    private:
+
+        int jour,mois,annee;
 
 };
 

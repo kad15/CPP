@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1541487266 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Annuaire.cpp
+	"Annuaire.h"
+
+1541487266 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Annuaire.h
+	<iostream>
+	<vector>
+	<limits>
+	<sstream>
+	<algorithm>
+	"Personne.h"
+
+1542808261 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Personne.h
+	<boost/archive/text_iarchive.hpp>
+	<boost/archive/text_oarchive.hpp>
+	<iostream>
+	"Date.h"
+
+1542808050 /home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Date.h
+	<boost/archive/text_iarchive.hpp>
+	<boost/archive/text_oarchive.hpp>
+	<iostream>
+
+1541487266 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Date.cpp
+	"Date.h"
+	<time.h>
+
+1541487266 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/Personne.cpp
+	"Personne.h"
+
+1541487266 source:/home/eleve/IENAC/beldjiab/Bureau/CPP-2018/tp6/TestSerialization.cpp
+	<iostream>
+	<fstream>
+	"Date.h"
+	"Personne.h"
+

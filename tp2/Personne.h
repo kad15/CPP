@@ -1,58 +1,51 @@
-#ifndef _PERSONNE_H
-#define _PERSONNE_H
-
-#include <iostream>
-
-using std::string;
+#ifndef PERSONNE_H
+#define PERSONNE_H
 
 #include "Date.h"
+#include <iostream>
+//using std::string;
+using namespace std;
+
 
 class Personne
 {
-    static int nb_pers;
-    //compteur du nombre de personnes
-
-    string nom;
-    // le nom de la personne(objet string).
-
-    string prenom;
-    // le prenom de la personne (objet string).
-
-    const int id;
-    //identifiant personne
-
-    const Date date_saisie;
-    // date ou la personne a été construite
-
     public:
-    Personne();
-    // construit une personne non initialisee (donc non valide).
+        Personne(const string& nom, const string& prenom);
+        Personne();
+        virtual ~Personne();
 
-    Personne(const string& nom, const string& prenom);
-    // construit une personne valide.
+    void setPrenom(const string& p){
+        prenom = p;
+    }
+    string getPrenom() const{
+        return prenom;
+    }
 
-    string getNom() const;
-    //retourne le prenom de la personne
-
-    void setNom(const string& nouveau_nom);
-    // change le nom de la personne.
-
-    string getPrenom() const;
-    // retourne le prenom de la personne.
-
-    void setPrenom(const string& nouveau_prenom);
-    // change le prenom de la personne.
-
-    void saisir();
-    // saisie une personne
+     void setNom(const string& n){
+        nom = n;
+    }
+    string getNom(){
+        return prenom;
+    }
 
     void affiche() const;
-    //affiche une personne
 
-    ~Personne();
-    // detruit cette personne et ses ressources allouees.
-
-};   // fin de la classe Personne
+      void saisir();
+    // saisie une personne
 
 
-#endif
+
+
+
+
+    private:
+
+        string nom, prenom;
+        static int nb_pers;
+        const int id;
+        const Date date_saisie;
+    //compteur du nombre de personnes
+
+};
+
+#endif // PERSONNE_H

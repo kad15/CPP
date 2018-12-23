@@ -12,7 +12,6 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -31,21 +30,18 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++11" />
+			<Add option="-std=c++14" />
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h" />
-		<Unit filename="Enseignant.cpp" />
-		<Unit filename="Enseignant.h" />
 		<Unit filename="Etudiant.cpp" />
 		<Unit filename="Etudiant.h" />
 		<Unit filename="Personne.cpp" />
 		<Unit filename="Personne.h" />
-		<Unit filename="Test_Etudiant2.cpp" />
+		<Unit filename="Test_Etudiant3.cpp" />
 		<Extensions>
 			<code_completion />
-			<envvars />
 			<debugger />
 		</Extensions>
 	</Project>

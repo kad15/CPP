@@ -3,15 +3,12 @@
 
 #include <iostream>
 
-using std::string;
-
 #include "Date.h"
+
+using std::string;
 
 class Personne
 {
-    static int nb_pers;
-    //compteur du nombre de personnes
-
     string nom;
     // le nom de la personne(objet string).
 
@@ -19,44 +16,45 @@ class Personne
     // le prenom de la personne (objet string).
 
     const int id;
-    //identifiant personne
+    // identifiant de la personne
 
-    const Date date_saisie;
-    // date ou la personne a été construite
+    static int no_id;
+    // compteur du nombre de personne
+
+    const Date dateSaisie;
+    // date
 
     public:
-    Personne();
-    // construit une personne non initialisee (donc non valide).
-
-    Personne(const string& nom, const string& prenom);
-    // construit une personne valide.
+    Personne(string nom="inconnu", string prenom="inconnu");
+    // constructeur
 
     string getNom() const;
     //retourne le prenom de la personne
 
-    void setNom(const string& nouveau_nom);
+    void setNom(string nouveau_nom);
     // change le nom de la personne.
 
     string getPrenom() const;
     // retourne le prenom de la personne.
 
-    void setPrenom(const string& nouveau_prenom);
+    void setPrenom(string nouveau_prenom);
     // change le prenom de la personne.
 
-    void saisir();
+    int getId() const ;
+    // retourne l'identifiant
+
+    virtual void saisir();
     // saisie une personne
 
-    void affiche() const;
+    virtual void affiche() const;
     //affiche une personne
 
-    ~Personne();
+    virtual ~Personne();
     // detruit cette personne et ses ressources allouees.
 
 };   // fin de la classe Personne
 
-
-ostream & operator<<(ostream & o, const Personne& p);
-istream & operator>>(istream & i, Personne& p);
-
+std::istream& operator>>(std::istream&, Personne& p);
+std::ostream& operator<<(std::ostream&,const Personne&);
 
 #endif
